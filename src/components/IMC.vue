@@ -99,34 +99,36 @@
 export default {
   name: 'IMC',
 
-  data: {
-    genero: null,
-    generos: [
-      { title: 'Masculino', value: 0.90 },
-      { title: 'Feminino', value: 0.85 },
-    ],
-    peso: null,
-    pesoIdeal: null,
-    altura: null,
-    imc: 0.0,
-    imcValue: null,
-    imcIndex: null,
-    imcValues: [
-      // Menos do que 17 -> Muito abaixo do peso
-      ['Menos do que 17', 'Muito abaixo do peso'],
-      // Entre 17 e 18,49 -> Abaixo do peso
-      ['Entre 17 e 18,49', 'Abaixo do peso'],
-      // Entre 18,5 e 24,9 -> Peso normal
-      ['Entre 18,5 e 24,9', 'Peso normal'],
-      // Entre 25 e 29,9 -> Sobrepeso
-      ['Entre 25 e 29,9', 'Sobrepeso'],
-      // Entre 30 e 34,9 -> Obesidade grau 1
-      ['Entre 30 e 34,9', 'Obesidade grau 1'],
-      // Entre 35 e 39,9 -> Obesidade grau 2
-      ['Entre 35 e 39,9', 'Obesidade grau 2'],
-      // Mais do que 40 -> Obesidade grau 3
-      ['Mais do que 40', 'Obesidade grau 3 (mórbida)'],
-    ],
+  data() {
+    return {
+      genero: null,
+      generos: [
+        { title: 'Masculino', value: 0.90 },
+        { title: 'Feminino', value: 0.85 },
+      ],
+      peso: null,
+      pesoIdeal: null,
+      altura: null,
+      imc: 0.0,
+      imcValue: null,
+      imcIndex: null,
+      imcValues: [
+        // Menos do que 17 -> Muito abaixo do peso
+        ['Menos do que 17', 'Muito abaixo do peso'],
+        // Entre 17 e 18,49 -> Abaixo do peso
+        ['Entre 17 e 18,49', 'Abaixo do peso'],
+        // Entre 18,5 e 24,9 -> Peso normal
+        ['Entre 18,5 e 24,9', 'Peso normal'],
+        // Entre 25 e 29,9 -> Sobrepeso
+        ['Entre 25 e 29,9', 'Sobrepeso'],
+        // Entre 30 e 34,9 -> Obesidade grau 1
+        ['Entre 30 e 34,9', 'Obesidade grau 1'],
+        // Entre 35 e 39,9 -> Obesidade grau 2
+        ['Entre 35 e 39,9', 'Obesidade grau 2'],
+        // Mais do que 40 -> Obesidade grau 3
+        ['Mais do que 40', 'Obesidade grau 3 (mórbida)'],
+      ],
+    };
   },
 
   created() {
