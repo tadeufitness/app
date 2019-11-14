@@ -24,6 +24,14 @@
 
 <script>
 export default {
+
   name: 'App',
+
+  created() {
+    setTimeout(() => {
+      document.getElementById('loading').style.display = 'none';
+    }, 500);
+  },
+
 };
 </script>
