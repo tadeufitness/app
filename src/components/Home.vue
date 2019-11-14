@@ -2,7 +2,7 @@
   <div>
     <div id="center">
       <section id="top">
-        <img src="/static/image/logo.png" alt="logo tadeufitness" id="top-image" />
+        <img src="/static/img/logo.png" alt="logo tadeufitness" id="top-image" />
         <h2>Bem vindo!</h2>
         <h3>
           tadeu.fitness
@@ -68,7 +68,9 @@
 
 <script>
 export default {
+
   name: 'Home',
+
 };
 </script>
 
