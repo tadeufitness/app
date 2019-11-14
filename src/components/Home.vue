@@ -28,49 +28,13 @@
   </div>
 </template>
 
-<style scoped>
-#center, #center * {
-  text-align: center;
-  margin: 0;
-}
-#top-image {
-  display: block;
-  width: 200px;
-  margin: 15px auto;
-}
-#top h2 {
-  text-transform: uppercase;
-  font-size: 25px;
-}
-#top h3 {
-  margin-top: 0;
-  font-weight: 100;
-}
-#top h3 small {
-  font-weight: bold;
-  color: #492bec;
-}
-#links {
-  margin: 30px 0;
-}
-#about {
-  padding-top: 15px;
-  margin: 15px 0 30px 0;
-  border-top: 1px solid #eee;
-}
-#about h4 {
-  text-transform: uppercase;
-}
-#follow {
-  margin-top: 30px;
-}
+<style scoped lang="sass">
+  @import '@/assets/sass/Home.sass'
 </style>
 
 <script>
 export default {
-
   name: 'Home',
-
 };
 </script>
 

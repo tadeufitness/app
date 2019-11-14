@@ -60,39 +60,8 @@
   </div>
 </template>
 
-<style scoped>
-#submit {
-  width: 100%;
-  margin: 4px 0 24px;
-  padding-top: 16px;
-  display: flex;
-  position: relative;
-  font-family: inherit;
-}
-#submit-button {
-  display: block;
-  margin: 25px auto;
-}
-#imc-display {
-  padding: 15px 0;
-}
-#imc-display h3 {
-  margin: 0;
-  text-transform: uppercase;
-  font-size: 30px;
-  font-weight: 100;
-}
-#imc-display p {
-  margin: 20px 0;
-  font-size: 60px;
-}
-.imc-values h3, .imc-values p {
-  margin: 0;
-}
-#info {
-  margin: 15px 0;
-  text-align: center;
-}
+<style scoped lang="sass">
+  @import '@/assets/sass/IMC.sass'
 </style>
 
 <script>
