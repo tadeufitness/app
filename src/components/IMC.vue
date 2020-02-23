@@ -19,10 +19,10 @@
         <md-radio v-model="genero" :value="generos[0]" class="md-primary">Masculino</md-radio>
         <md-radio v-model="genero" :value="generos[1]">Feminino</md-radio>
       </div>
-      <div id="submit">
-        <md-button type="submit" class="md-raised md-primary" id="submit-button">Calcular IMC</md-button>
+      <div id="imc-submit">
+        <md-button type="submit" class="md-raised md-accent" id="imc-submit-button">Calcular IMC</md-button>
       </div>
-      <section id="info">
+      <section id="imc-info">
         * Este teste não deve substituir a consulta a um nutricionista.
       </section>
     </form>
@@ -51,7 +51,7 @@
         <p style="font-size:12px;">* Estes valores podem variar de pessoa para pessoa.</p>
       </section>
       <p>
-        <md-button type="button" class="md-raised md-accent" id="submit-button" @click="limparValores">Limpar</md-button>
+        <md-button type="button" class="md-raised md-accent" id="imc-submit-button" @click="limparValores">Limpar</md-button>
       </p>
       <p>
         <md-icon class="md-size-2x">linear_scale</md-icon>
@@ -60,14 +60,8 @@
   </div>
 </template>
 
-<style scoped lang="sass">
-  @import '@/assets/sass/IMC.sass'
-</style>
-
 <script>
 export default {
-  name: 'IMC',
-
   data() {
     return {
       genero: null,
