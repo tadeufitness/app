@@ -2,9 +2,16 @@
   min-height: 100vh
   margin: auto
   padding: 15px
-  padding-bottom: 40px
+
+#top-bar
+  display: none
+  width: 100%
+  position: fixed
+  top: 0
+  left: 0
 
 #bottom-bar
+  display: none
   position: fixed
   bottom: 0
   left: 0
@@ -14,3 +21,23 @@
 
   *, &
     color: #fff !important
+
+@media screen and (max-width: 760px)
+  #main
+    padding-bottom: 40px
+
+  #top-bar
+    display: none
+
+  #bottom-bar
+    display: block
+
+@media screen and (min-width: 761px)
+  #main
+    width: 400px
+
+  #top-bar
+    display: block
+
+  #bottom-bar
+    display: none
